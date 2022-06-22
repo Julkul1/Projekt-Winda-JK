@@ -34,6 +34,6 @@ jobs:
 
       - uses: csexton/release-asset-action@v2
         with: 
-          github-token: ${{ secres.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           pattern: WpfApp1/bin/Release/netcoreapp3.1/win-x64/publish/*.exe
           release-url: ${{ steps.create_release.outputs.upload_url }}
