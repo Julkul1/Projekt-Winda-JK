@@ -356,6 +356,7 @@ namespace WpfApp1
                 zegar_1_start.Stop();
                 obecne_pietro = 0;
                 winda.pietro_windy = 0;
+                winda.kierunek = true;
                 Animacja_ruchu_windy();
                 if (winda_pozycja == 660 - (obecne_pietro * 100))
                 {
